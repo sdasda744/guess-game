@@ -30,14 +30,14 @@ function guessNumber() {
         
         if(Number(validGuessNumber) === randomNumber) {
             lastResult.textContent = "Congratulation, You got it right";
-            funText.textContent = "အားလုံးက ကိုအားဝူ ကိုအားဝူဖြစ်နေကြတာ";
+            
 
             lowOrHigh.textContent = "";
             setGameOver();
 
         } else if (guessCount === 10) {
             lastResult.textContent = "!!! GAME OVER !!!"
-            funText.textContent = "ကိုအားဝူကို ဘောပါဘဲ";
+           
             lowOrHigh.textContent = "";
             setGameOver();
 
