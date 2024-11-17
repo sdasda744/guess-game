@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black font-spaceGrotesk text-white p-5">
+    <!-- Background Circles -->
+    
+    <div class="relative w-full">
+        <!-- Circle 1 -->
+        <div class="absolute mx-auto  md:left-1/4 h-[300px] w-[300px] rounded-full opacity-80 bg-gradient-to-tr from-green-600 to-gray-800 animate-bounce"></div>
+        <!-- Circle 2 -->
+        <div class="absolute mx-auto -top-[300px] right-0  md:right-1/4 md:-top-[100px]  h-[240px] w-[240px] rounded-full opacity-80 bg-gradient-to-tr from-green-600 to-gray-800 animate-bounce"></div>
+    </div>
+    
+    <div class="max-w-[560px] min-h-[260px] mx-auto left-0 right-0 absolute  backdrop-blur-[35px] shadow-[0_0_80px_rgba(0,0,0,0.25)] overflow-hidden p-12 rounded-[20px] border-2 border-solid border-[rgba(255,255,255,0.1)];
+    background: rgba(255, 255, 255, 0.1)">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 ">Number Guessing Game</h1>
+        <p class="text-lg md:text-xl mb-1">You can guess a number only 1 to 100</p>
+        <div class="flex flex-col gap-2 mb-2">
+            <label class="text-base md:text-lg " for="">Enter a guess number: </label>
+            <div class="flex flex-col md:flex-row gap-3 md:gap-6">
+                <input id="inputText" type="number" class="px-3 py-2 text-stone-900 rounded-md">
+                <button id="submitBtn" type="button" class="w-36 p-3 md:px-2 md:py-1 bg-[#F5004F] font-bold rounded-md text-base md:text-lg">Submit guess</button>
+            </div>
+        </div>
+        <div id="guessGroup" class="space-y-2">
+            <p id="guesses" class="para text-lg"></p>
+            <p id="lastResult" class="para text-lg md:text-xl font-bold"></p>
+            <p id="funText" class="para text-lg font-bold font-notoSansMyanmar"></p>
+            <p id="lowOrHigh" class="para text-lg md:text-xl"></p>
+            <!-- <button type="button" class="px-2 py-1 bg-[#000B58] rounded-md text-base md:text-lg">Start new game</button> -->
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
